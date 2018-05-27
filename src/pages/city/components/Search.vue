@@ -38,6 +38,7 @@ export default {
 			// this.$store.commit('changeCity',city)
 			this.changeCity(city)
 			this.$router.push('/')
+			this.keyword = ''
 		},
 		...mapMutations(['changeCity'])
 	},
