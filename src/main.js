@@ -8,6 +8,8 @@ import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 //引入store下的index.js可省略不写index.js
 import store from './store'
+//兼容部分手机不支持Promise
+import 'babel-polyfill'
 import 'styles/reset.css'
 //1像素边框问题
 import 'styles/border.css'
