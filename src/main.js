@@ -6,6 +6,8 @@ import router from './router'
 //移动端300ms延迟问题
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+//引入store下的index.js可省略不写index.js
+import store from './store'
 import 'styles/reset.css'
 //1像素边框问题
 import 'styles/border.css'
@@ -21,6 +23,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
