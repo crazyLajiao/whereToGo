@@ -30,7 +30,7 @@ export default {
     },
     methods: {
         getCityInfo() {
-            axios.get('/api/city.json').then(this.getCityInfoSucc)
+            axios.get('https://www.easy-mock.com/mock/5c0714f95054d376e455c604/kuniu/city').then(this.getCityInfoSucc)
         },
         getCityInfoSucc(res) {
             res = res.data
@@ -39,7 +39,7 @@ export default {
                 this.cities = data.cities
                 this.hotCities = data.hotCities
             }
-            //  console.log(res)
+              console.log(res)
         },
         handleLetterChange(letter) {
             this.letter = letter

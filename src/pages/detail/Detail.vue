@@ -35,7 +35,7 @@ export default {
     methods: {
         getDetailInfo() {
             // axios.get('/api/detail.json?id='+this.$router.params.id).then(this.getDetailInfoSucc)
-            axios.get('/api/detail.json',{
+            axios.get('https://www.easy-mock.com/mock/5c0714f95054d376e455c604/kuniu/detail',{
                 params: {
                     id: this.$route.params.id
                 }
@@ -49,7 +49,7 @@ export default {
                 this.bannerImg = data.bannerImg
                 this.gallaryImgs = data.gallaryImgs
                 this.list = data.categoryList
-                // console.log(data)
+                 console.log(data)
             }
         }
     },

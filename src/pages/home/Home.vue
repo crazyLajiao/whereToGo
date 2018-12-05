@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         getHomeInfo(){
-            axios.get('/api/index.json?city='+this.city).then(this.getHomeInfoSucc)
+            axios.get('https://www.easy-mock.com/mock/5c0714f95054d376e455c604/kuniu/index?city='+this.city).then(this.getHomeInfoSucc)
         },
         getHomeInfoSucc(res) {
             res = res.data
@@ -47,7 +47,7 @@ export default {
                 this.recommendList = data.recommendList
                 this.weekendList = data.weekendList
             }
-            // console.log(res)
+             console.log(res)
         }
     },
     computed: {
@@ -62,7 +62,7 @@ export default {
             this.lastCity = this.city
             this.getHomeInfo()
         }
-        
+
     }
 }
 </script>
